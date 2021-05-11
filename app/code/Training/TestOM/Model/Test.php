@@ -5,9 +5,9 @@ namespace Training\TestOM\Model;
 class Test
 {
     private $manager;
-    private $arrayList;
     private $name;
     private $number;
+    private $arrayList;
 
     public function __construct(
         \Training\TestOM\Model\ManagerInterface $manager,
@@ -32,4 +32,3 @@ public function log()
         print_r($this->arrayList);
     }
 }
-
