@@ -5,21 +5,20 @@ namespace Training\TestOM\Model;
 class Test
 {
     private $manager;
+    private $arrayList;
     private $name;
     private $number;
-    private $arrayList;
 
     public function __construct(
         \Training\TestOM\Model\ManagerInterface $manager,
         $name,
         int $number,
         array $arrayList
-    )
-    {
+    ) {
         $this->manager = $manager;
         $this->name = $name;
         $this->number = $number;
-        $this->arrayList;
+        $this->arrayList = $arrayList;
     }
 public function log()
     {
