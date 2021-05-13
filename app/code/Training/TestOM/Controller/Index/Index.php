@@ -2,12 +2,16 @@
 
 namespace Training\TestOM\Controller\Index;
 
-class Index implements \Magento\Framework\App\Action\HttpGetActionInterface
+use \Magento\Framework\App\Action\HttpGetActionInterface;
+use \Magento\Framework\App\Action\HttpPostActionInterface;
+use \App\code\Training\TestOM\Model\Test;
+
+class Index implements HttpGetActionInterface, HttpPostActionInterface
 {
     private $test;
 
     public function __construct(
-        \Training\TestOM\Model\Test $test
+        $test
     ) {
         $this->test = $test;
     }

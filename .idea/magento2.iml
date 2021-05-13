@@ -16,7 +16,6 @@
       <sourceFolder url="file://$MODULE_DIR$/setup/src/Zend/Mvc/Controller" isTestSource="false" packagePrefix="Zend\Mvc\Controller\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/dev" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpcollection/phpcollection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
@@ -567,14 +566,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/elasticsearch/elasticsearch" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-webdriver/webdriver" />
-      <excludeFolder url="file://$MODULE_DIR$/generated" />
-      <excludeFolder url="file://$MODULE_DIR$/var" />
-      <excludeFolder url="file://$MODULE_DIR$/phpserver" />
-      <excludeFolder url="file://$MODULE_DIR$/lib" />
-      <excludeFolder url="file://$MODULE_DIR$/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea" />
-      <excludeFolder url="file://$MODULE_DIR$/pub" />
-      <excludeFolder url="file://$MODULE_DIR$/setup" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -8,17 +8,20 @@ class Test
     private $arrayList;
     private $name;
     private $number;
+    private $managerFactory;
 
     public function __construct(
-        \Training\TestOM\Model\ManagerInterface $manager,
+        ManagerInterface $manager,
         $name,
         int $number,
-        array $arrayList
+        array $arrayList,
+        ManagerInterfaceFactory $managerFactory
     ) {
         $this->manager = $manager;
         $this->name = $name;
         $this->number = $number;
         $this->arrayList = $arrayList;
+        $this->managerFactory = $managerFactory;
     }
 public function log()
     {
@@ -29,5 +32,8 @@ public function log()
         print_r($this->number);
         echo '<br>';
         print_r($this->arrayList);
+        echo '<br>';
+        $newManager = $this->managerFactory->create();
+        print_r(get_class($newManager));
     }
 }
