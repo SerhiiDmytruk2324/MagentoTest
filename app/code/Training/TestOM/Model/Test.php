@@ -9,19 +9,22 @@ class Test
     private $name;
     private $number;
     private $managerFactory;
+    private $playWithTest;
 
     public function __construct(
         ManagerInterface $manager,
         $name,
         int $number,
         array $arrayList,
-        ManagerInterfaceFactory $managerFactory
+        ManagerInterfaceFactory $managerFactory,
+        PlayWithTest $playWithTest
     ) {
         $this->manager = $manager;
         $this->name = $name;
         $this->number = $number;
         $this->arrayList = $arrayList;
         $this->managerFactory = $managerFactory;
+        $this->playWithTest = $playWithTest;
     }
 public function log()
     {
@@ -35,5 +38,8 @@ public function log()
         echo '<br>';
         $newManager = $this->managerFactory->create();
         print_r(get_class($newManager));
+        echo '<br>';
+        $playWithTest = $this->playWithTest->run();
+        print_r($playWithTest);
     }
 }
