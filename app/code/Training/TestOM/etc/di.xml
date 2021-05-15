@@ -13,19 +13,20 @@
     </arguments>
 </type>
 
-    <virtualType name="customTestVirtualType" type="Training\TestOM\Model\Test">
+    <virtualType name="playWithTestVirtualType" type="Training\TestOM\Model\Test">
         <arguments>
             <argument name="namespace" xsi:type="string">custom_namespace_from_direct_call</argument>
             <argument name="customArrayList" xsi:type="array">
                 <item name="item_1" xsi:type="string">aaaaa</item>
                 <item name="item_2" xsi:type="string">bbbbb</item>
             </argument>
+            <argument name="newTestObject" xsi:type="object">Training\TestOM\Model\ManagerCustomImplementation</argument>
         </arguments>
     </virtualType>
 
-    <type name="Training\TestOM\Controller\Model\Test">
+    <type name="Training\TestOM\Controller\Index\Index">
         <arguments>
-            <argument name="customTest" xsi:type="object">customTestVirtualType</argument>
+            <argument name="playWithTest" xsi:type="object">playWithTestVirtualType</argument>
         </arguments>
     </type>
 </config>
