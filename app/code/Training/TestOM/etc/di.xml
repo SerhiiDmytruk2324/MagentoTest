@@ -12,4 +12,20 @@
         </argument>
     </arguments>
 </type>
+
+    <virtualType name="customTestVirtualType" type="Training\TestOM\Model\Test">
+        <arguments>
+            <argument name="namespace" xsi:type="string">custom_namespace_from_direct_call</argument>
+            <argument name="customArrayList" xsi:type="array">
+                <item name="item_1" xsi:type="string">aaaaa</item>
+                <item name="item_2" xsi:type="string">bbbbb</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Training\TestOM\Controller\Model\Test">
+        <arguments>
+            <argument name="customTest" xsi:type="object">customTestVirtualType</argument>
+        </arguments>
+    </type>
 </config>
