@@ -20,8 +20,8 @@ class RedirectToLogin implements ObserverInterface
      * @param \Magento\Framework\App\ActionFlag $actionFlag
      */
     public function __construct(
-        RedirectInterface $redirect,
-        ActionFlag $actionFlag
+        \Magento\Framework\App\Response\RedirectInterface $redirect,
+        \Magento\Framework\App\ActionFlag $actionFlag
     ) {
         $this->redirect = $redirect;
         $this->actionFlag = $actionFlag;
@@ -35,7 +35,7 @@ class RedirectToLogin implements ObserverInterface
         ) {
 // if ($request->getFullActionName() == 'catalog_product_view') { // altenative way
             $controller = $observer->getEvent()->getData('controller_action');
-            $this->actionFlag->set('', ActionInterface::FLAG_NO_DISPATCH,
+            $this->actionFlag->set('', \Magento\Framework\App\ActionInterface::FLAG_NO_DISPATCH,
                 true);
             $this->redirect->redirect($controller->getResponse(), 'customer/account/login');
         }
