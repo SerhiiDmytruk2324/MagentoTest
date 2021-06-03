@@ -1,0 +1,19 @@
+{
+    "elogic_vendors": {
+        "column": {
+            "id": true,
+            "name": true,
+            "description": true,
+            "created_at": true,
+            "updated_at": true,
+            "logo": true,
+            "active": true
+        },
+        "index": {
+            "ELOGIC_VENDORS_NAME": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
