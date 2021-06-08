@@ -4,6 +4,7 @@
     <module name="Elogic_HelloWorld" >
         <sequence>
             <module name="Elogic_Author"/>
+            <module name="Elogic_Import"/>
         </sequence>
     </module>
 </config>

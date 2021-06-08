@@ -187,7 +187,7 @@
                 <label translate="true">Modified</label>
             </settings>
         </column>
-        <actionsColumn name="actions" class="Magento\Cms\Ui\Component\Listing\Column\PageActions">
+        <actionsColumn name="actions" class="Elogic\Author\Ui\Component\Listing\Column\Actions">
             <settings>
                 <indexField>author_id</indexField>
                 <resizeEnabled>false</resizeEnabled>
